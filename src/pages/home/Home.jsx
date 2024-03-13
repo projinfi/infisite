@@ -46,8 +46,55 @@ const Home = () => {
                       </div>
                
                 </div>
+             
             </div>
         </div>
+
+        {/* scroller */}
+          <div className='scroller-container'>
+
+            <div className='scroll-contents'>
+              <div className='scroll-text'>Infideck</div>
+              <div className='scroll-icon'>
+                      <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                  </div>
+            </div>
+            <div className='scroll-contents'>
+              <div className='scroll-text'>Infideck</div>
+              <div className='scroll-icon'>
+                      <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                  </div>
+            </div>
+            <div className='scroll-contents'>
+              <div className='scroll-text'>Infideck</div>
+              <div className='scroll-icon'>
+                      <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                  </div>
+            </div>
+            <div className='scroll-contents'>
+              <div className='scroll-text'>Infideck</div>
+              <div className='scroll-icon'>
+                      <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                  </div>
+            </div>
+            <div className='scroll-contents'>
+              <div className='scroll-text'>Infideck</div>
+              <div className='scroll-icon'>
+                      <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                  </div>
+            </div>
+
+          </div> 
     </div>
   )
 }
