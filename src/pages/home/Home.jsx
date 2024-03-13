@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useRef,useEffect,useState} from 'react';
 import '../home/Home.css';
 import homeperson from '/src/images/homeperson.png';
 import homec1 from '/src/images/homec1.png';
@@ -6,8 +6,78 @@ import homec2 from '/src/images/homec2.png';
 import homec3 from '/src/images/homec3.png';
 import homec4 from '/src/images/homec4.png';
 import homec5 from '/src/images/homec5.png';
+import playicon from '/src/images/playicon.svg';
+import {useScroll,useTransform,useAnimation} from 'framer-motion';
+import { ScrollTrigger } from 'gsap/all';
+import gsap from 'gsap';
+import { useInView } from 'react-intersection-observer';
 
 const Home = () => {
+
+    let xPercent = 0;
+     let direction = -80;
+    const [scrollDirection, setScrollDirection] = useState('down');
+    const firstText = useRef(null);
+    const controls = useAnimation();
+    const slider = useRef(null);
+    const [inViewRef1, inView1] = useInView();
+    const [inViewRef2, inView2] = useInView();
+
+    const animate = () => {
+        if (xPercent < -100) {
+          xPercent = 0;
+        } else if (xPercent > 0) {
+          xPercent = -100;
+        }
+        gsap.set(firstText.current, { xPercent: xPercent });
+        xPercent += 0.1; // Adjust the speed of the scroll
+        
+        requestAnimationFrame(animate);
+      };
+      
+
+      useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(slider.current, {
+          scrollTrigger: {
+            trigger: document.documentElement,
+            scrub: 0.2, // Adjust this value
+            start: 0,
+            end: window.innerHeight,
+            onUpdate: (e) => {
+              direction = e.direction * -1;
+            }
+          },
+          x: '-100px'
+        });
+        
+     
+      }, []);
+
+      useEffect(() => {
+        if (inView1 || inView2) {
+          controls.start({
+            x: scrollDirection === 'down' ? '100%' : '-100%',
+            transition: { duration: 10, ease: 'linear' },
+            loop: Infinity // Add loop property to make it loop indefinitely
+          });
+        }
+      }, [inView1, inView2, controls, scrollDirection]);
+
+      useEffect(() => {
+        const handleScroll = () => {
+          const newScrollDirection = window.scrollY > 0 ? 'up' : 'down';
+          setScrollDirection(newScrollDirection);
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+      
+
   return (
     <div className='home-container'>
         <div className='intro-container'>
@@ -48,54 +118,86 @@ const Home = () => {
                 </div>
              
             </div>
+            <div className='scroller-container'>
+              <div className='scroller-space'  ref={slider}>
+                  <div ref={firstText} className='scroll-contents'>
+                      <div className='scroll-text'>Infideck</div>
+                      <div className='scroll-icon'>
+                          <svg className='rotate-svg' width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                      </div>
+                  </div>
+                  <div ref={firstText} className='scroll-contents'>
+                      <div className='scroll-text'>Infideck</div>
+                      <div className='scroll-icon'>
+                          <svg className='rotate-svg' width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                      </div>
+                  </div>
+                  <div ref={firstText} className='scroll-contents'>
+                      <div className='scroll-text'>Infideck</div>
+                      <div className='scroll-icon'>
+                          <svg className='rotate-svg' width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                      </div>
+                  </div>
+                  <div ref={firstText} className='scroll-contents'>
+                      <div className='scroll-text'>Infideck</div>
+                      <div className='scroll-icon'>
+                          <svg className='rotate-svg' width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                      </div>
+                  </div>
+                  <div ref={firstText} className='scroll-contents'>
+                      <div className='scroll-text'>Infideck</div>
+                      <div className='scroll-icon'>
+                          <svg className='rotate-svg' width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                      </div>
+                  </div>
+                  <div ref={firstText} className='scroll-contents'>
+                      <div className='scroll-text'>Infideck</div>
+                      <div className='scroll-icon'>
+                          <svg className='rotate-svg' width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                      </div>
+                  </div>
+                  <div ref={firstText} className='scroll-contents'>
+                      <div className='scroll-text'>Infideck</div>
+                      <div className='scroll-icon'>
+                          <svg className='rotate-svg' width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                      </div>
+                  </div>
+              </div>
+
+
+
+          </div>
         </div>
 
         {/* scroller */}
-          <div className='scroller-container'>
-
-            <div className='scroll-contents'>
-              <div className='scroll-text'>Infideck</div>
-              <div className='scroll-icon'>
-                      <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                  </div>
+          
+          <div className='whyus-container'>
+            <div className='whyus-content'>
+            <div className='whyus-title'>Join us on a journey beyond boundaries as we transform your vision into a limitless <span className='digital-reality'>digital reality.</span></div>
+            <div className='whyus-video'>
+                <img src={playicon}/>
             </div>
-            <div className='scroll-contents'>
-              <div className='scroll-text'>Infideck</div>
-              <div className='scroll-icon'>
-                      <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                  </div>
+           <div className='whyus-quesans'>
+           <div className='whyus-question'>WHY CHOOSE US ?</div>
+            <div className='whyus-answer'>From innovative digital strategies to cutting-edge web design, seamless software development, and captivating design services.</div>
+           </div>
             </div>
-            <div className='scroll-contents'>
-              <div className='scroll-text'>Infideck</div>
-              <div className='scroll-icon'>
-                      <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                  </div>
-            </div>
-            <div className='scroll-contents'>
-              <div className='scroll-text'>Infideck</div>
-              <div className='scroll-icon'>
-                      <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                  </div>
-            </div>
-            <div className='scroll-contents'>
-              <div className='scroll-text'>Infideck</div>
-              <div className='scroll-icon'>
-                      <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M53.0585 26.8801L3.96806 29.1492M27.3787 3.46944L29.6479 52.5599M14.8571 42.9945L42.1695 13.0348M43.4932 41.6709L13.5334 14.3584" stroke="black" stroke-width="6.14286" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                  </div>
-            </div>
-
-          </div> 
-    </div>
+          </div>
+      </div>
   )
 }
 
