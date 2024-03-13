@@ -17,3 +17,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "Boska";
+  src: url(/fonts/Boska-VariableItalic.ttf);
+}
