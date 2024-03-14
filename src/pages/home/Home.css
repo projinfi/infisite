@@ -58,9 +58,11 @@
     line-height: 106.6px;
       font-family: "Sora", sans-serif;
       font-weight: 500;
+      z-index: 1;
 }
 .intro-description{
     font-size: 26px;
+    z-index: 1;
 }
 .intro-more-btns{
     display: flex;
@@ -123,6 +125,17 @@
     /* background-color: aqua; */
     position: relative;
 
+}
+.mobileelement1{
+    position: absolute;
+    animation: rotate 5s linear infinite;
+    top: 40px;
+  
+}
+.mobileelement2{
+    position: absolute;
+    animation: rotate 5s linear infinite;
+    left: 200px;
 }
 .element1{
     position: absolute;
@@ -290,6 +303,11 @@
     gap: 22px;
     color: black;
 }
+.motion-div{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
 @media screen and (max-width:1200px) and (min-width:0px) {
     .intro-section {
      flex-direction: column;
@@ -320,25 +338,76 @@
     }
 }
 @media screen and (max-width:650px) and (min-width:0px) {
-.intro-title{
-    font-size: 55px;
-    line-height: 66.6px;
-}
-.intro-description {
-font-size: 22px;
-}
-.intro-container {
-    padding: 10px;
-}
-}
-@media screen and (max-width:750px) and (min-width:0px) {
-    .explore-btn {
-        font-size: 20px;
-      
+.intro-title {
+        font-size: 52px;
+        line-height: 66.6px;
     }
 
-    .free-quote-text {
-        font-size: 20px;
+    .intro-description {
+        font-size: 18px;
+        font-family: Manrope;
     }
+
+    .intro-container {
+        padding: 16px;
+    }
+    .free-quote-text{
+        font-family: Manrope;
+        font-size: 16px;
+    }
+    .explore-btn{
+      font-family: Manrope;
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+    .whyus-content{
+        padding: 0px 16px;
+    }
+    .scroll-text{
+        font-size: 34px
+    }
+    .scroll-contents{
+        gap: 34px;
+    }
+    .motion-div{
+        gap: 28px;
+    }
+    .scroller-container{
+        height: auto;
+    }
+    .rotate-svg{
+        width: 34px;
+        height: 34px;
+        margin-top: 4px;
+    }
+    .whyus-title{
+       font-size: 34px;
+       text-align: center;
+    }
+    .whyus-question{
+        font-size: 28px;
+    }
+    .whyus-answer {
+        
+        font-size: 22px;
+       
+    }
+       
 }
+@media screen and (max-width:425px) and (min-width:0px) {
+  .free-quote-icon{
+    display: none;
+  }
+}
+@media screen and (max-width:380px) and (min-width:0px) {
+ 
+    .free-quote-text{
+        font-size: 16px;
+    }
+    .explore-btn{
+      font-size: 16px;
+    }
+  }
+  
+
 

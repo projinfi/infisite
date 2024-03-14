@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className='navbar-container'>
         <div className='navbar-content'>
             <div className='navbar-content-left'>
-                <img src={infilogo} width='100px' height='50px'/>
+                <img className='navbarlogo' src={infilogo} width='100px' height='50px'/>
             </div>
             <div className='navbar-content-right'>
                 <div className='navbar-link'>About</div>
