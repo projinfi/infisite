@@ -7,6 +7,7 @@ import homec3 from '/src/images/homec3.png';
 import homec4 from '/src/images/homec4.png';
 import homec5 from '/src/images/homec5.png';
 import playicon from '/src/images/playicon.svg';
+import homelines from '/src/images/homelines.svg';
 import {useScroll,useTransform,useAnimation,motion} from 'framer-motion';
 import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
@@ -95,8 +96,8 @@ const Home = () => {
         <div className='intro-container'>
             <div className='intro-section'>
                 <div className='intro-left'>
-                <img src={homec1} className='home-image-elements mobileelement1' />
-                    <img src={homec2} className='home-image-elements mobileelement2' />
+                <img src={homec3} className='home-image-elements mobileelement1' />
+                <img className='homelines' src={homelines}/>
                     <div className='intro-title'>Crafting Experiences that <span className='matters-txt'>Matters.</span></div>
                     
                     <div className='intro-description'>Join us on a journey beyond boundaries as we transform your vision into a limitless digital reality.</div>
@@ -130,7 +131,7 @@ const Home = () => {
                         
                           <img className='home-person' src={homeperson} />
                      
-                       
+                     
                       </div>
                
                 </div>
