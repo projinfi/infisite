@@ -355,9 +355,6 @@
     gap: 18px;
   
 }
-.motto-image{
-
-}
 .motto-title{
 color: white;
 font: Sora;
@@ -366,6 +363,90 @@ font-weight: 500;
 }
 .motto-description{
 text-align: center;
+}
+/* our services */
+.our-services-container{
+    background-color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+  
+}
+.our-services-contents{
+    background-color: rgb(255, 255, 255);
+    padding: 60px 88px;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+}
+.our-services-titles{
+    background-color: rgb(255, 255, 255);
+    font: Sora;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #01050B;
+}
+.our-services-jobs{
+    background-color: rgb(89, 174, 174);
+}
+.our-service-title{
+    font-size: 60px;
+    text-align: end;
+    font-weight: 500;
+}
+.our-service-description{
+    font-size: 26px;
+    text-align:right;
+}
+.job-box{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 58px;
+    border-top: 1px solid black;
+    cursor: pointer;
+    position: relative;
+}
+.job-image{
+    position: absolute;
+    background-color: antiquewhite;
+    height: 280px;
+    border-radius: 12px;
+    width: 100%;
+    top: -40px;
+    right: 200px;
+    max-width: 340px;
+    z-index: 1;
+    display: none;
+    background-image: url(/src/images/hoverimage.jpg);
+ 
+}
+.job-box:hover{
+    background-color: #146EF8;
+    transition: 0.7s ease;
+}
+.job-box:hover .job-title{
+    color: white;
+}
+.job-box:hover .arrowstroke{
+    stroke: white;
+}
+.job-box:hover .arrow-container {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+.job-box:hover .job-image {
+   display: block;
+   transition: transform 0.8s ease;
+}
+.job-title{
+    font: Sora;
+    font-weight: 500;
+    font-size: 46px;
+    color: #01050B;
 }
 @media screen and (max-width:1200px) and (min-width:0px) {
     .intro-section {

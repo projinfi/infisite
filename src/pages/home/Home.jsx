@@ -228,6 +228,74 @@ const Home = () => {
 
         </div>
       </div>
+
+
+    {/* our services */}
+    <div className='our-services-container'>
+      <div className='our-services-contents'>
+
+        <div className='our-services-titles'>
+               <div className='our-service-title'>OUR SERVICES</div>
+               <div className='our-service-description'>From innovative digital strategies to cutting-edge web design, seamless software development, and captivating design services.</div>
+        </div>
+
+          <div className='our-services-jobs'>
+            <div className='job-box'>
+              <div className='job-title'>Branding & Digital Strategies</div>
+              <div className='job-image'></div>
+              <div class='arrow-container'>
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path className='arrowstroke' d="M40 70C56.5685 70 70 56.5685 70 40C70 23.4315 56.5685 10 40 10C23.4315 10 10 23.4315 10 40C10 56.5685 23.4315 70 40 70Z" stroke="#01050B" stroke-width="3" stroke-miterlimit="10" />
+                <path className='arrowstroke' d="M33.75 31.25H48.75V46.25" stroke="#01050B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path className='arrowstroke' d="M31.25 48.75L48.75 31.25" stroke="#01050B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg></div>
+            </div>
+            <div className='job-box'>
+              <div className='job-title'>Results-Driven Digital marketing</div>
+              <div className='job-image'></div>
+              <div class='arrow-container'>
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path className='arrowstroke' d="M40 70C56.5685 70 70 56.5685 70 40C70 23.4315 56.5685 10 40 10C23.4315 10 10 23.4315 10 40C10 56.5685 23.4315 70 40 70Z" stroke="#01050B" stroke-width="3" stroke-miterlimit="10" />
+                <path className='arrowstroke' d="M33.75 31.25H48.75V46.25" stroke="#01050B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path className='arrowstroke' d="M31.25 48.75L48.75 31.25" stroke="#01050B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg></div>
+            </div>
+            <div className='job-box'>
+              <div className='job-title'>Web Design & App Development</div>
+              <div className='job-image'></div>
+              <div class='arrow-container'>
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path className='arrowstroke' d="M40 70C56.5685 70 70 56.5685 70 40C70 23.4315 56.5685 10 40 10C23.4315 10 10 23.4315 10 40C10 56.5685 23.4315 70 40 70Z" stroke="#01050B" stroke-width="3" stroke-miterlimit="10" />
+                <path className='arrowstroke' d="M33.75 31.25H48.75V46.25" stroke="#01050B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path className='arrowstroke' d="M31.25 48.75L48.75 31.25" stroke="#01050B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg></div>
+            </div>
+            <div className='job-box'>
+              <div className='job-title'>Visual Production</div>
+              <div className='job-image'></div>
+              <div class='arrow-container'>
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path className='arrowstroke' d="M40 70C56.5685 70 70 56.5685 70 40C70 23.4315 56.5685 10 40 10C23.4315 10 10 23.4315 10 40C10 56.5685 23.4315 70 40 70Z" stroke="#01050B" stroke-width="3" stroke-miterlimit="10" />
+                <path className='arrowstroke' d="M33.75 31.25H48.75V46.25" stroke="#01050B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path className='arrowstroke' d="M31.25 48.75L48.75 31.25" stroke="#01050B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg></div>
+            </div>
+            <div className='job-box'>
+              <div className='job-title'>Influencer Marketing</div>
+              <div className='job-image'></div>
+              <div class='arrow-container'>
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path className='arrowstroke' d="M40 70C56.5685 70 70 56.5685 70 40C70 23.4315 56.5685 10 40 10C23.4315 10 10 23.4315 10 40C10 56.5685 23.4315 70 40 70Z" stroke="#01050B" stroke-width="3" stroke-miterlimit="10" />
+                <path className='arrowstroke' d="M33.75 31.25H48.75V46.25" stroke="#01050B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path className='arrowstroke' d="M31.25 48.75L48.75 31.25" stroke="#01050B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg></div>
+            </div>
+            
+          </div>
+        
+
+      </div>
+    </div>
       </div>
   )
 }
