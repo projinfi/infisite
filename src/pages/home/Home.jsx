@@ -7,6 +7,7 @@ import homec3 from '/src/images/homec3.png';
 import homec4 from '/src/images/homec4.png';
 import homec5 from '/src/images/homec5.png';
 import playicon from '/src/images/playicon.svg';
+import productvideo from '/src/images/productvideo.mp4'
 import homelines from '/src/images/homelines.svg';
 import {useScroll,useTransform,useAnimation,motion} from 'framer-motion';
 import { ScrollTrigger } from 'gsap/all';
@@ -165,18 +166,68 @@ const Home = () => {
 
         {/* scroller */}
           
-          <div className='whyus-container'>
-            <div className='whyus-content'>
-            <div className='whyus-title'>Join us on a journey beyond boundaries as we transform your vision into a limitless <span className='digital-reality'>digital reality.</span></div>
-            <div className='whyus-video'>
-                <img src={playicon}/>
+      <div className='whyus-container'>
+        <div className='whyus-content'>
+          <div className='whyus-title'>Join us on a journey beyond boundaries as we transform your vision into a limitless <span className='digital-reality'>digital reality.</span></div>
+          <div>
+            <div style={{ borderRadius: '22px', overflow: 'hidden' }}>
+              <video  controls autoPlay muted loop  className='whyus-video'  style={{ width: '100%', borderRadius: '22px' }}>
+                <source src={productvideo} type="video/mp4" />
+                {/* Add other video sources for different formats if needed */}
+                Your browser does not support the video tag.
+              </video>
             </div>
+           
+          </div>
            <div className='whyus-quesans'>
            <div className='whyus-question'>WHY CHOOSE US ?</div>
             <div className='whyus-answer'>From innovative digital strategies to cutting-edge web design, seamless software development, and captivating design services.</div>
            </div>
             </div>
           </div>
+
+          {/* our motto */}
+      <div className='our-motto-container'>
+        <div className='our-motto-contents'>
+
+          <div className='our-motto-section'>
+            <div className='motto-image'>
+              <svg className='mottoimg' width="100%" height="auto" viewBox="0 0 383 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="6" width="371" height="203" rx="101.5" fill="#F8FFD1" />
+                <rect x="6" y="6" width="371" height="203" rx="101.5" stroke="#E5F788" stroke-width="12" />
+                <path d="M191.5 51.0312C160.363 51.0312 135.031 76.3635 135.031 107.5C135.031 138.637 160.363 163.969 191.5 163.969C222.637 163.969 247.969 138.637 247.969 107.5C247.969 76.3635 222.637 51.0312 191.5 51.0312ZM204.583 83.9949L211.126 89.7123L191.142 112.544L184.599 106.284L204.583 83.9949ZM174.106 131.019L154.95 111.844L161.094 105.7L180.252 124.875L174.106 131.019ZM191.752 131.233L172.374 111.844L178.52 105.703L191.324 118.52L221.494 83.9949L228.036 89.7123L191.752 131.233Z" fill="#01050B" />
+              </svg>
+            </div>
+            <div className='motto-title'>Smart Choices</div>
+            <div className='motto-description'>Utilizing data insights to inform strategic decisions and optimize outcomes.</div>
+          </div>
+
+          <div className='our-motto-section'>
+            <div className='motto-image'>
+              <svg className='mottoimg' width="100%" height="auto" viewBox="0 0 383 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="6" width="371" height="203" rx="101.5" fill="#F8FFD1" />
+                <rect x="6" y="6" width="371" height="203" rx="101.5" stroke="#E5F788" stroke-width="12" />
+                <path d="M191.5 51.0312C160.363 51.0312 135.031 76.3635 135.031 107.5C135.031 138.637 160.363 163.969 191.5 163.969C222.637 163.969 247.969 138.637 247.969 107.5C247.969 76.3635 222.637 51.0312 191.5 51.0312ZM204.583 83.9949L211.126 89.7123L191.142 112.544L184.599 106.284L204.583 83.9949ZM174.106 131.019L154.95 111.844L161.094 105.7L180.252 124.875L174.106 131.019ZM191.752 131.233L172.374 111.844L178.52 105.703L191.324 118.52L221.494 83.9949L228.036 89.7123L191.752 131.233Z" fill="#01050B" />
+              </svg>
+            </div>
+            <div className='motto-title'>Custom Solutions</div>
+            <div className='motto-description'>Crafting customized answers to fit the unique needs of diverse industries.</div>
+          </div>
+
+          <div className='our-motto-section'>
+            <div className='motto-image'>
+              <svg className='mottoimg' width="100%" height="auto" viewBox="0 0 383 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="6" width="371" height="203" rx="101.5" fill="#F8FFD1" />
+                <rect x="6" y="6" width="371" height="203" rx="101.5" stroke="#E5F788" stroke-width="12" />
+                <path d="M191.5 51.0312C160.363 51.0312 135.031 76.3635 135.031 107.5C135.031 138.637 160.363 163.969 191.5 163.969C222.637 163.969 247.969 138.637 247.969 107.5C247.969 76.3635 222.637 51.0312 191.5 51.0312ZM204.583 83.9949L211.126 89.7123L191.142 112.544L184.599 106.284L204.583 83.9949ZM174.106 131.019L154.95 111.844L161.094 105.7L180.252 124.875L174.106 131.019ZM191.752 131.233L172.374 111.844L178.52 105.703L191.324 118.52L221.494 83.9949L228.036 89.7123L191.752 131.233Z" fill="#01050B" />
+              </svg>
+            </div>
+            <div className='motto-title'>Advanced Tech</div>
+            <div className='motto-description'>Embracing continuous innovation and adapting to stay ahead in a dynamic scope.</div>
+          </div>
+
+        </div>
+      </div>
       </div>
   )
 }

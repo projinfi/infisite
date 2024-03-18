@@ -256,9 +256,9 @@
     gap: 32px;
 }
 .scroll-text{
-    font-family: Boska;
-    font-weight: 600;
-    font-size: 44px;
+    font-family: "Arsenica Trial";
+    font-weight: 400;
+    font-size: 60px;
   color: white;
 }
 /* section-3 */
@@ -277,7 +277,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+ 
     padding: 0px 88px;
     gap: 32px;
 }
@@ -293,12 +294,13 @@
 .whyus-video{
     background-color: aliceblue;
     width: 100%;
-    max-width: 1200px;
-    height: 600px;
+    max-width: 1800px;
+    height: 100%;
     border-radius: 22px;
-    background-image: url(/src/images/videoimg.png);
-    display: flex;
-    justify-content: center;
+
+
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .whyus-question{
     font-family: Sora;
@@ -320,6 +322,50 @@
     display: flex;
     flex-direction: row;
     gap: 32px;
+}
+.our-motto-container{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+  
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 60px;
+  
+}
+.our-motto-contents{
+  /* background-color: rgb(67, 67, 67); */
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    width: 100%;
+    gap: 42px;
+ 
+}
+.our-motto-section{
+  /* background-color: rgb(106, 75, 75); */
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+  
+}
+.motto-image{
+
+}
+.motto-title{
+color: white;
+font: Sora;
+font-size: 32px;
+font-weight: 500;
+}
+.motto-description{
+text-align: center;
 }
 @media screen and (max-width:1200px) and (min-width:0px) {
     .intro-section {
@@ -352,6 +398,31 @@
         height: 90vh;
     }
 }
+@media screen and (max-width:1025px) and (min-width:0px) {
+  .motto-title{
+    font-size: 24px;
+  }
+  .our-motto-contents{
+    gap: 12px;
+  }
+ 
+}
+@media screen and (max-width:750px) and (min-width:0px) {
+  .our-motto-contents{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+  }
+  .our-motto-section{
+    max-width: 100%;
+  }
+  .our-motto-container {
+   
+    padding: 20px 18px;
+}
+  }
 @media screen and (max-width:650px) and (min-width:0px) {
 .intro-title {
         font-size: 52px;
@@ -414,6 +485,9 @@
   .free-quote-icon{
     display: none;
   }
+  .whyus-container{
+   padding: 90px 0px 40px 0px;
+}
 }
 @media screen and (max-width:380px) and (min-width:0px) {
  
