@@ -182,14 +182,14 @@
 .element4{
     position: absolute;
     bottom: 200px;
-    right: 100px;
+    right: 70px;
     height: auto;
     animation: shake 5s ease infinite;
 }
 .element5{
     position: absolute;
     bottom: 8px;
-    right: 130px;
+    right: 100px;
     height: auto;
     animation: shake 5s ease infinite;
 }
@@ -383,6 +383,7 @@ color: white;
 font: Sora;
 font-size: 32px;
 font-weight: 500;
+text-align: center;
 }
 .motto-description{
 text-align: center;
@@ -495,6 +496,7 @@ width: 100%;
     .mobileelement1, .mobileelement2{
         display: block;
     }
+    
 }
 
 @media screen and (max-width:1100px) and (min-width:0px) {
@@ -516,8 +518,25 @@ width: 100%;
   .our-motto-contents{
     gap: 12px;
   }
+  .job-box:hover .job-image {
+    display: none;
+ 
+ }
+ .our-motto-contents{
+  
+    gap: 42px;
  
 }
+
+}
+@media screen and (max-width:850px) and (min-width:0px) {
+ 
+ .job-title{
+    font-size: 32px;
+ }
+
+  }
+  
 @media screen and (max-width:750px) and (min-width:0px) {
   .our-motto-contents{
     flex-direction: column;
@@ -531,9 +550,60 @@ width: 100%;
   }
   .our-motto-container {
    
-    padding: 20px 18px;
+    padding: 0px 18px;
 }
+.whyus-question{
+    font-family: Sora;
+   font-size: 28px;
+   font-weight: 500;
+   display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: black;
+    padding: 10px 0px 10px 0px
+}
+.our-motto-contents{
+    padding: 50px 20px;
+}
+.mottoimg{
+    width: 80%;
+}
+.motto-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-services-contents {
+    padding: 60px 0px;     
+}
+.job-box{
+    padding: 18px;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+.our-service-title {
+    font-size: 40px;
+   
+}
+.our-service-description {
+    font-size: 22px;
+
+}
+.our-services-titles{
+    padding: 18px;
+    gap: 24px;
+}
+.our-services-contents {
+    padding: 0px 0px;
+  
+}
+
   }
+
+
+
+
 @media screen and (max-width:650px) and (min-width:0px) {
 .intro-title {
         font-size: 52px;
