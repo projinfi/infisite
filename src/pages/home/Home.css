@@ -1,0 +1,584 @@
+.home-container{
+    background-color: rgb(255, 255, 255);
+    margin-top: 10vh;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  
+
+}
+.intro-container{
+    background-color: rgb(0, 0, 0);
+    height: 101vh; 
+    padding: 0px 88px;
+    position: relative;
+  
+}
+.intro-section{
+    background-color: rgb(0, 0, 0);
+    height: 90vh;
+  
+   
+}
+.matters-txt{
+    font-family: Boska;
+    font-weight: 600;
+}
+.intro-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.intro-left{
+    width: 100%;
+    max-width: 800px;
+    background-color: rgb(0, 0, 0);
+
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+}
+.intro-right{
+    width: 100%;
+    max-width: 600px;
+    background-color: rgb(0, 0, 0);
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+   
+}
+.intro-title{
+    font-size: 82px;
+    line-height: 106.6px;
+      font-family: "Sora", sans-serif;
+      font-weight: 500;
+      z-index: 1;
+}
+.intro-description{
+    font-size: 26px;
+    z-index: 1;
+}
+.intro-more-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.get-free-quote{
+    display: flex;
+    background-color: #146EF8;
+    padding: 8px 12px;
+   justify-content: center;
+   align-items: center;
+    border-radius: 14px;
+    gap: 6px;
+    font-family: "Manrope", sans-serif;
+    cursor: pointer;
+}
+.free-quote-text{
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+ cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.free-quote-icon{
+ 
+    display: flex;
+    justify-content: center;
+}
+.explore-btn{
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 8px 12px;
+    border-radius: 14px;
+    font-family: "Manrope", sans-serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-person{
+    width: 90%;
+    height: auto;
+    max-height: 600px;
+    position: relative;
+
+}
+.home-image-elements {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+}
+.home-image{
+    /* background-color: aqua; */
+    position: relative;
+
+}
+.mobileelement1{
+    position: absolute;
+    animation: shake 5s ease infinite;
+    top: 60px;
+    left: 30px;
+    opacity: 0.5;
+    display: none;
+  
+}
+.mobileelement2{
+    position: absolute;
+    animation: rotate 5s linear infinite;
+    left: 200px;
+    opacity: 0.5;
+    display: none;
+}
+.element1{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: auto;
+    animation: rotate 5s linear infinite;
+  
+    
+  
+}
+
+.element2{
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    height: auto;
+    animation: rotate 5s linear infinite;
+   
+}
+.element3{
+        position: absolute;
+        bottom: 190px;
+        left: 0px;
+        height: auto;
+        animation: shake 5s ease infinite;
+}
+
+.element4{
+    position: absolute;
+    bottom: 200px;
+    right: 100px;
+    height: auto;
+    animation: shake 5s ease infinite;
+}
+.element5{
+    position: absolute;
+    bottom: 8px;
+    right: 130px;
+    height: auto;
+    animation: shake 5s ease infinite;
+}
+.section-3{
+    height: 100vh;
+    background-color: rgb(185, 148, 101);
+}
+.rotate-svg{
+    animation: rotate 5s linear infinite;
+}
+.homelines{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+}
+
+@keyframes rotate {
+    from{
+     transform: rotate(0deg);
+    }
+    to{
+     transform: rotate(360deg);
+    }
+}
+@keyframes shake {
+    0%{
+       transform: translateX(0);
+    }
+    25%{
+       transform: translateX(-5px) rotate(0deg);
+    }
+    50%{
+       transform: translateX(5px) rotate(0deg);
+    }
+    75%{
+       transform: translateX(-5px) rotate(0deg);
+    }
+    100%{
+       transform: translateX(0);
+    }
+   }
+/* section2 - scroller container */
+.scroller-container{
+    width: 120%;
+    background-color: #146EF8;
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 42px;
+    rotate: -3deg;
+    position: absolute;
+    bottom: 0;
+    left: -3px;
+    bottom: -31px;
+    display: flex;
+    justify-content: center;
+}
+.scroll-contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+    width: 120%;
+    max-width: 1200px;
+  
+  
+}
+.scroller-space{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.scroll-text{
+    font-family: "Arsenica Trial";
+    font-weight: 400;
+    font-size: 60px;
+  color: white;
+}
+/* section-3 */
+.whyus-container{
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   padding: 150px 0px 40px 0px;
+}
+.whyus-content{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+ 
+    padding: 0px 88px;
+    gap: 32px;
+}
+.whyus-title{
+    font-family: Sora;
+    color: black;
+    font-size: 48px;
+    font-weight: 500;
+}
+.digital-reality{
+   color: #146EF8;
+}
+.whyus-video{
+    background-color: aliceblue;
+    width: 100%;
+    max-width: 1800px;
+    height: 100%;
+    border-radius: 22px;
+
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.whyus-question{
+    font-family: Sora;
+   font-size: 60px;
+   font-weight: 500;
+}
+.whyus-answer{
+    font-family: Sora;
+    font-size: 26px;
+    font-weight: 400;
+}
+.whyus-quesans{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    color: black;
+}
+.motion-div{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.our-motto-container{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+  
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 60px;
+  
+}
+.our-motto-contents{
+  /* background-color: rgb(67, 67, 67); */
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    width: 100%;
+    gap: 42px;
+ 
+}
+.our-motto-section{
+  /* background-color: rgb(106, 75, 75); */
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+  
+}
+.motto-title{
+color: white;
+font: Sora;
+font-size: 32px;
+font-weight: 500;
+}
+.motto-description{
+text-align: center;
+}
+/* our services */
+.our-services-container{
+    background-color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+  
+}
+.our-services-contents{
+    background-color: rgb(255, 255, 255);
+    padding: 60px 88px;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+}
+.our-services-titles{
+    background-color: rgb(255, 255, 255);
+    font: Sora;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #01050B;
+}
+.our-services-jobs{
+    background-color: rgb(89, 174, 174);
+}
+.our-service-title{
+    font-size: 60px;
+    text-align: end;
+    font-weight: 500;
+}
+.our-service-description{
+    font-size: 26px;
+    text-align:right;
+}
+.job-box{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 58px;
+    border-top: 1px solid black;
+    cursor: pointer;
+    position: relative;
+}
+.job-image{
+    position: absolute;
+    background-color: antiquewhite;
+    height: 280px;
+    border-radius: 12px;
+    width: 100%;
+    top: -40px;
+    right: 200px;
+    max-width: 340px;
+    z-index: 1;
+    display: none;
+    background-image: url(/src/images/hoverimage.jpg);
+ 
+}
+.job-box:hover{
+    background-color: #146EF8;
+    transition: 0.7s ease;
+}
+.job-box:hover .job-title{
+    color: white;
+}
+.job-box:hover .arrowstroke{
+    stroke: white;
+}
+.job-box:hover .arrow-container {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+.job-box:hover .job-image {
+   display: block;
+   transition: transform 0.8s ease;
+}
+.job-title{
+    font: Sora;
+    font-weight: 500;
+    font-size: 46px;
+    color: #01050B;
+}
+@media screen and (max-width:1200px) and (min-width:0px) {
+    .intro-section {
+     flex-direction: column;
+    }
+    .intro-right{
+        order: 1;
+   
+    }
+    .intro-left{
+        order: 2;
+    }
+    .intro-right{
+        display: none;
+    }
+    .mobileelement1, .mobileelement2{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1100px) and (min-width:0px) {
+    .intro-container{
+       
+        padding: 30px;
+      
+    }
+    .intro-section{
+        display: flex;
+       
+        height: 90vh;
+    }
+}
+@media screen and (max-width:1025px) and (min-width:0px) {
+  .motto-title{
+    font-size: 24px;
+  }
+  .our-motto-contents{
+    gap: 12px;
+  }
+ 
+}
+@media screen and (max-width:750px) and (min-width:0px) {
+  .our-motto-contents{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+  }
+  .our-motto-section{
+    max-width: 100%;
+  }
+  .our-motto-container {
+   
+    padding: 20px 18px;
+}
+  }
+@media screen and (max-width:650px) and (min-width:0px) {
+.intro-title {
+        font-size: 52px;
+        line-height: 66.6px;
+    }
+
+    .intro-description {
+        font-size: 18px;
+        font-family: Manrope;
+    }
+
+    .intro-container {
+        padding: 16px;
+    }
+    .free-quote-text{
+        font-family: Manrope;
+        font-size: 16px;
+    }
+    .explore-btn{
+      font-family: Manrope;
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+    .whyus-content{
+        padding: 0px 16px;
+    }
+    .scroll-text{
+        font-size: 34px
+    }
+    .scroll-contents{
+        gap: 34px;
+    }
+    .motion-div{
+        gap: 28px;
+    }
+    .scroller-container{
+        height: auto;
+    }
+    .rotate-svg{
+        width: 34px;
+        height: 34px;
+        margin-top: 4px;
+    }
+    .whyus-title{
+       font-size: 34px;
+       text-align: center;
+    }
+    .whyus-question{
+        font-size: 28px;
+    }
+    .whyus-answer {
+        
+        font-size: 22px;
+       
+    }
+   
+       
+}
+@media screen and (max-width:425px) and (min-width:0px) {
+  .free-quote-icon{
+    display: none;
+  }
+  .whyus-container{
+   padding: 90px 0px 40px 0px;
+}
+}
+@media screen and (max-width:380px) and (min-width:0px) {
+ 
+    .free-quote-text{
+        font-size: 16px;
+    }
+    .explore-btn{
+      font-size: 16px;
+    }
+  }
+  
+
+

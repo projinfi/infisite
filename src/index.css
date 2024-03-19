@@ -17,3 +17,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "Boska";
+  src: url(/fonts/Boska-VariableItalic.ttf);
+}
+
+@font-face {
+  font-family: "Arsenica Trial";
+  src: url(/fonts/ArsenicaTrial-Regular.ttf);
+}
