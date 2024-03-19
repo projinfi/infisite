@@ -94,11 +94,13 @@ const Home = () => {
 
   return (
     <div className='home-container'>
+           <img className='homelines' src={homelines}/>
         <div className='intro-container'>
+          
             <div className='intro-section'>
                 <div className='intro-left'>
                 <img src={homec3} className='home-image-elements mobileelement1' />
-                <img className='homelines' src={homelines}/>
+           
                     <div className='intro-title'>Crafting Experiences that <span className='matters-txt'>Matters.</span></div>
                     
                     <div className='intro-description'>Join us on a journey beyond boundaries as we transform your vision into a limitless digital reality.</div>
