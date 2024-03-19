@@ -450,6 +450,7 @@ width: 100%;
     z-index: 1;
     display: none;
     background-image: url(/src/images/hoverimage.jpg);
+    background-size: cover;
  
 }
 .job-box:hover{

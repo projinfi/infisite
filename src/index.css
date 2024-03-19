@@ -29,3 +29,19 @@
   font-family: "Arsenica Trial";
   src: url(/fonts/ArsenicaTrial-Regular.ttf);
 }
+
+/* Reduce the size of the scrollbar */
+::-webkit-scrollbar {
+  width: 2px; /* Adjust the width as needed */
+}
+
+/* Change the color of the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Change to desired color */
+}
+
+/* Change the color of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #146EF8; /* Change to desired color */
+}
+
