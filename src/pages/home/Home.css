@@ -599,6 +599,75 @@ width: 100%;
     background-repeat: no-repeat;
 }
 
+/* about results */
+.about-results-container{
+    background-color: #146EF8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.about-results-content{
+    width: 100%;
+    /* background-color: #3f3f3f; */
+    padding: 50px 88px 70px 88px;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    max-width: 1600px;
+}
+.about-title-des{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.about-results-title{
+    font-family: 'Sora';
+    font-size: 60px;
+    font-weight: 500;
+
+}
+.about-results-description{
+    font-family: 'Sora';
+    font-size: 26px;
+}
+.about-results-points{
+    /* background-color: #766e6e; */
+    display: flex;
+    justify-content: space-between;
+  
+  
+}
+.about-point-box{
+    /* background-color: rgb(119, 121, 122); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+.oc-points{
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+.about-point{
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 72px;
+}
+.about-comments{
+    font-family: 'Sora';
+    font-size: 26px;
+}
+
+
+
+
+
 
 @media screen and (max-width:1200px) and (min-width:0px) {
     .intro-section {
@@ -651,8 +720,26 @@ width: 100%;
 .featuredsvg{
     display: none;
 }
-
+.about-results-content {
+  
+    padding: 40px;
+   
 }
+}
+
+
+@media screen and (max-width:950px) and (min-width:0px) {
+ 
+    .about-results-points {
+       flex-direction: column;
+    }
+    .oc-points{
+        border-left: 0px solid white;
+        border-right: 0px solid white;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+     }
 @media screen and (max-width:850px) and (min-width:0px) {
  
  .job-title{
@@ -857,6 +944,13 @@ width: 100%;
     font-size: 40px;
     text-align: left;
    }
+   .about-results-content {
+    gap: 32px;
+}
+.about-results-title {
+   
+    font-size: 40px;
+}
 
 }
 @media screen and (max-width:380px) and (min-width:0px) {
