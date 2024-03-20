@@ -823,8 +823,20 @@ width: 100%;
         font-size: 22px;
        
     }
-   
-       
+        .featured-btn {
+            width: 100%;
+            max-width: 150px;
+            font-size: 14px;
+            padding: 8px 22px;
+        }
+        .featured-title-btn{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+         }
+        
 }
 @media screen and (max-width:425px) and (min-width:0px) {
   .free-quote-icon{
@@ -838,6 +850,14 @@ width: 100%;
     font-size: 30px;
  
 }
+.imgsmallbox{
+    height: 250px;
+}
+.featured-title{
+    font-size: 40px;
+    text-align: left;
+   }
+
 }
 @media screen and (max-width:380px) and (min-width:0px) {
  
@@ -848,6 +868,7 @@ width: 100%;
       font-size: 16px;
     }
   }
+
   
 
 
