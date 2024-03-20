@@ -310,7 +310,6 @@ const Home = () => {
     
       <div className='featured-works-container'>
         <div className='featured-works-content'>
-
           <div className='featured-title-btn'>
             <div className='featured-title'>FEATURED WORKS</div>
             <div className='featured-btn'>
@@ -322,36 +321,56 @@ const Home = () => {
               </svg>
             </div>
           </div>
-
           <div className='featured-description'>From innovative digital strategies to cutting-edge web design, seamless software development, and captivating design services.</div>
-
           <div className='featured-image-container'>
-
             <div className='featured-image-sec1'>
               <div className='featured-image-box imgbx1'></div>
               <div className='featured-image-box imgbx2'></div>
             </div>
-
             <div className='featured-image-sec2'>
               <div className=' imgsmallbox imgbx3'></div>
               <div className='imgsmallbox imgbx4'></div>
               <div className=' imgsmallbox imgbx5'></div>
             </div>
-
             <div className='featured-image-sec3'>
               <div className='featured-image-box imgbx6'></div>
               <div className='featured-image-box imgbx7'></div>
             </div>
-
-
-          
-
-         
-
           </div>
-
         </div>
       </div>
+
+      <div className='about-results-container'>
+        <div className='about-results-content'>
+          <div className='about-title-des'>
+          <div className='about-results-title'>IT’S ALL ABOUT RESULTS</div>
+          <div className='about-results-description'>You can bet on it! We deliver the best.</div>
+          </div>
+          <div className='about-results-points'>
+
+            <div className='about-point-box'>
+               <div className='about-point'>100%</div>
+               <div className='about-comments'>Customer Satisfaction</div>
+            </div>
+            <div className='about-point-box oc-points'>
+               <div className='about-point'>03+</div>
+               <div className='about-comments'>Operating Countries</div>
+            </div>
+            <div className='about-point-box'>
+               <div className='about-point'>50+</div>
+               <div className='about-comments'>Successful Campaigns</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
 
 
       </div>
