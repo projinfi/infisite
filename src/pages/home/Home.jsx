@@ -15,6 +15,8 @@ import gsap from 'gsap';
 import { useInView } from 'react-intersection-observer';
 
 
+
+
 const Home = () => {
 
     let xPercent = 0;
@@ -243,8 +245,14 @@ const Home = () => {
 
           <div className='our-services-jobs'>
             <div className='job-box'>
+            
               <div className='job-title'>Branding & Digital Strategies</div>
-              <div className='job-image'></div>
+
+              <div className='job-image'>
+            
+              </div>
+              
+
               <div class='arrow-container'>
                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path className='arrowstroke' d="M40 70C56.5685 70 70 56.5685 70 40C70 23.4315 56.5685 10 40 10C23.4315 10 10 23.4315 10 40C10 56.5685 23.4315 70 40 70Z" stroke="#01050B" stroke-width="3" stroke-miterlimit="10" />
@@ -298,6 +306,54 @@ const Home = () => {
 
       </div>
     </div>
+
+    
+      <div className='featured-works-container'>
+        <div className='featured-works-content'>
+
+          <div className='featured-title-btn'>
+            <div className='featured-title'>FEATURED WORKS</div>
+            <div className='featured-btn'>
+              <div>View All Work</div>
+              <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 35C28.2843 35 35 28.2843 35 20C35 11.7157 28.2843 5 20 5C11.7157 5 5 11.7157 5 20C5 28.2843 11.7157 35 20 35Z" stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                <path d="M20.9531 25.2969L26.25 20L20.9531 14.7031" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M13.75 20H26.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+
+          <div className='featured-description'>From innovative digital strategies to cutting-edge web design, seamless software development, and captivating design services.</div>
+
+          <div className='featured-image-container'>
+
+            <div className='featured-image-sec1'>
+              <div className='featured-image-box imgbx1'></div>
+              <div className='featured-image-box imgbx2'></div>
+            </div>
+
+            <div className='featured-image-sec2'>
+              <div className=' imgsmallbox imgbx3'></div>
+              <div className='imgsmallbox imgbx4'></div>
+              <div className=' imgsmallbox imgbx5'></div>
+            </div>
+
+            <div className='featured-image-sec3'>
+              <div className='featured-image-box imgbx6'></div>
+              <div className='featured-image-box imgbx7'></div>
+            </div>
+
+
+          
+
+         
+
+          </div>
+
+        </div>
+      </div>
+
+
       </div>
   )
 }
