@@ -535,7 +535,7 @@ width: 100%;
     gap: 22px;
     width: 100%;
     height: auto;
-    background-color: #878f9a;
+    /* background-color: #878f9a; */
 }
 .featured-image-sec1{
     display: grid;
@@ -554,7 +554,7 @@ width: 100%;
     gap: 23px;  
 }
 .featured-image-box{
-    background-color: #878f9a;
+    /* background-color: #878f9a; */
  background-size: cover;
  width: 100%;
 
