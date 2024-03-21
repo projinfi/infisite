@@ -6,6 +6,7 @@ import homec2 from '/src/images/homec2.png';
 import homec3 from '/src/images/homec3.png';
 import homec4 from '/src/images/homec4.png';
 import homec5 from '/src/images/homec5.png';
+
 import playicon from '/src/images/playicon.svg';
 import productvideo from '/src/images/productvideo.mp4'
 import homelines from '/src/images/homelines.svg';
@@ -14,11 +15,16 @@ import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
 import { useInView } from 'react-intersection-observer';
 
+import {Swiper,SwiperSlide} from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import 'swiper/css';
+
 
 
 
 const Home = () => {
 
+  
     let xPercent = 0;
     const scrollLimit = Array.from({ length: 50 }, (_, index) => index);
      let direction = -80;
@@ -28,6 +34,8 @@ const Home = () => {
     const slider = useRef(null);
     const [inViewRef1, inView1] = useInView();
     const [inViewRef2, inView2] = useInView();
+
+    
 
     const animate = () => {
         if (xPercent < -100) {
@@ -362,6 +370,133 @@ const Home = () => {
             </div>
 
           </div>
+        </div>
+      </div>
+
+      {/* our client says */}
+      <div className='client-says-container'>
+        <div className='client-says-content'>
+
+          <div className='client-says-title-des'>
+              <div className='client-says-title'>WHAT OUR CLIENT SAYS</div>
+              <div className='client-says-description'>Client satisfaction is a key value that we holds.</div>
+          </div>
+
+          <div className='client-says-slider'>
+            <Swiper
+              spaceBetween={30}
+              loop={true} // Set loop to true
+              slidesPerView={1}
+             
+             
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              speed={1000}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+              effect={'slide'} 
+              breakpoints={{
+               
+                900: {
+                  slidesPerView: 2,
+                },
+              }}
+            >
+              <SwiperSlide>
+                <div className='slider-card'>
+                  <div className='slider-quote-icon'>
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M26.9756 43.4841C26.9756 46.0362 26.0824 48.1735 24.296 49.8961C22.5096 51.6187 20.2766 52.48 17.597 52.48C15.0449 52.48 12.8757 51.4911 11.0893 49.5133C9.30288 47.5355 8.40967 45.0472 8.40967 42.0486C8.40967 39.8794 8.88817 37.4869 9.84518 34.871C10.866 32.2552 12.1739 29.6075 13.7689 26.9279C15.4277 24.2482 17.278 21.6005 19.3196 18.9847C21.425 16.3051 23.5304 13.8168 25.6358 11.52L28.2198 13.6254C25.3487 17.0069 22.9562 20.4202 21.0422 23.8654C19.1282 27.3107 17.9798 30.6921 17.597 34.0097C20.149 34.2011 22.3501 35.1581 24.2003 36.8808C26.0505 38.6034 26.9756 40.8045 26.9756 43.4841ZM54.4418 43.4841C54.4418 46.0362 53.5486 48.1735 51.7622 49.8961C49.9758 51.6187 47.7428 52.48 45.0631 52.48C42.5111 52.48 40.3419 51.4911 38.5555 49.5133C36.769 47.5355 35.8758 45.0472 35.8758 42.0486C35.8758 39.8794 36.3543 37.4869 37.3113 34.871C38.3322 32.2552 39.6401 29.6075 41.2351 26.9279C42.8939 24.2482 44.7441 21.6005 46.7857 18.9847C48.8912 16.3051 50.9966 13.8168 53.102 11.52L55.5902 13.6254C52.7192 17.0069 50.3267 20.4202 48.4127 23.8654C46.5624 27.3107 45.4459 30.6921 45.0631 34.0097C47.6152 34.2011 49.8163 35.1581 51.6665 36.8808C53.5167 38.6034 54.4418 40.8045 54.4418 43.4841Z" fill="#146EF8" />
+                    </svg>
+                  </div>
+                  <div className='slider-comments'>A game-changer for my business. Thank you for your expertise! The guidance and strategies provided by this team have transformed my business into a thriving success.</div>
+                  <div className='slider-profile-details'>
+                    <div className='slider-profile-image'>
+
+                    </div>
+                    <div className='slider-profile-info'>
+                      <div className='slider-profile-name'>Sanath S B</div>
+                      <div className='slider-profile-location'>Fullstack Developer</div>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='slider-card'>
+                  <div className='slider-quote-icon'>
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M26.9756 43.4841C26.9756 46.0362 26.0824 48.1735 24.296 49.8961C22.5096 51.6187 20.2766 52.48 17.597 52.48C15.0449 52.48 12.8757 51.4911 11.0893 49.5133C9.30288 47.5355 8.40967 45.0472 8.40967 42.0486C8.40967 39.8794 8.88817 37.4869 9.84518 34.871C10.866 32.2552 12.1739 29.6075 13.7689 26.9279C15.4277 24.2482 17.278 21.6005 19.3196 18.9847C21.425 16.3051 23.5304 13.8168 25.6358 11.52L28.2198 13.6254C25.3487 17.0069 22.9562 20.4202 21.0422 23.8654C19.1282 27.3107 17.9798 30.6921 17.597 34.0097C20.149 34.2011 22.3501 35.1581 24.2003 36.8808C26.0505 38.6034 26.9756 40.8045 26.9756 43.4841ZM54.4418 43.4841C54.4418 46.0362 53.5486 48.1735 51.7622 49.8961C49.9758 51.6187 47.7428 52.48 45.0631 52.48C42.5111 52.48 40.3419 51.4911 38.5555 49.5133C36.769 47.5355 35.8758 45.0472 35.8758 42.0486C35.8758 39.8794 36.3543 37.4869 37.3113 34.871C38.3322 32.2552 39.6401 29.6075 41.2351 26.9279C42.8939 24.2482 44.7441 21.6005 46.7857 18.9847C48.8912 16.3051 50.9966 13.8168 53.102 11.52L55.5902 13.6254C52.7192 17.0069 50.3267 20.4202 48.4127 23.8654C46.5624 27.3107 45.4459 30.6921 45.0631 34.0097C47.6152 34.2011 49.8163 35.1581 51.6665 36.8808C53.5167 38.6034 54.4418 40.8045 54.4418 43.4841Z" fill="#146EF8" />
+                    </svg>
+                  </div>
+                  <div className='slider-comments'>A game-changer for my business. Thank you for your expertise! The guidance and strategies provided by this team have transformed my business into a thriving success.</div>
+                  <div className='slider-profile-details'>
+                    <div className='slider-profile-image'>
+
+                    </div>
+                    <div className='slider-profile-info'>
+                      <div className='slider-profile-name'>Sanath S B</div>
+                      <div className='slider-profile-location'>Fullstack Developer</div>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='slider-card'>
+                  <div className='slider-quote-icon'>
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M26.9756 43.4841C26.9756 46.0362 26.0824 48.1735 24.296 49.8961C22.5096 51.6187 20.2766 52.48 17.597 52.48C15.0449 52.48 12.8757 51.4911 11.0893 49.5133C9.30288 47.5355 8.40967 45.0472 8.40967 42.0486C8.40967 39.8794 8.88817 37.4869 9.84518 34.871C10.866 32.2552 12.1739 29.6075 13.7689 26.9279C15.4277 24.2482 17.278 21.6005 19.3196 18.9847C21.425 16.3051 23.5304 13.8168 25.6358 11.52L28.2198 13.6254C25.3487 17.0069 22.9562 20.4202 21.0422 23.8654C19.1282 27.3107 17.9798 30.6921 17.597 34.0097C20.149 34.2011 22.3501 35.1581 24.2003 36.8808C26.0505 38.6034 26.9756 40.8045 26.9756 43.4841ZM54.4418 43.4841C54.4418 46.0362 53.5486 48.1735 51.7622 49.8961C49.9758 51.6187 47.7428 52.48 45.0631 52.48C42.5111 52.48 40.3419 51.4911 38.5555 49.5133C36.769 47.5355 35.8758 45.0472 35.8758 42.0486C35.8758 39.8794 36.3543 37.4869 37.3113 34.871C38.3322 32.2552 39.6401 29.6075 41.2351 26.9279C42.8939 24.2482 44.7441 21.6005 46.7857 18.9847C48.8912 16.3051 50.9966 13.8168 53.102 11.52L55.5902 13.6254C52.7192 17.0069 50.3267 20.4202 48.4127 23.8654C46.5624 27.3107 45.4459 30.6921 45.0631 34.0097C47.6152 34.2011 49.8163 35.1581 51.6665 36.8808C53.5167 38.6034 54.4418 40.8045 54.4418 43.4841Z" fill="#146EF8" />
+                    </svg>
+                  </div>
+                  <div className='slider-comments'>A game-changer for my business. Thank you for your expertise! The guidance and strategies provided by this team have transformed my business into a thriving success.</div>
+                  <div className='slider-profile-details'>
+                    <div className='slider-profile-image'>
+
+                    </div>
+                    <div className='slider-profile-info'>
+                      <div className='slider-profile-name'>Sanath S B</div>
+                      <div className='slider-profile-location'>Fullstack Developer</div>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='slider-card'>
+                  <div className='slider-quote-icon'>
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M26.9756 43.4841C26.9756 46.0362 26.0824 48.1735 24.296 49.8961C22.5096 51.6187 20.2766 52.48 17.597 52.48C15.0449 52.48 12.8757 51.4911 11.0893 49.5133C9.30288 47.5355 8.40967 45.0472 8.40967 42.0486C8.40967 39.8794 8.88817 37.4869 9.84518 34.871C10.866 32.2552 12.1739 29.6075 13.7689 26.9279C15.4277 24.2482 17.278 21.6005 19.3196 18.9847C21.425 16.3051 23.5304 13.8168 25.6358 11.52L28.2198 13.6254C25.3487 17.0069 22.9562 20.4202 21.0422 23.8654C19.1282 27.3107 17.9798 30.6921 17.597 34.0097C20.149 34.2011 22.3501 35.1581 24.2003 36.8808C26.0505 38.6034 26.9756 40.8045 26.9756 43.4841ZM54.4418 43.4841C54.4418 46.0362 53.5486 48.1735 51.7622 49.8961C49.9758 51.6187 47.7428 52.48 45.0631 52.48C42.5111 52.48 40.3419 51.4911 38.5555 49.5133C36.769 47.5355 35.8758 45.0472 35.8758 42.0486C35.8758 39.8794 36.3543 37.4869 37.3113 34.871C38.3322 32.2552 39.6401 29.6075 41.2351 26.9279C42.8939 24.2482 44.7441 21.6005 46.7857 18.9847C48.8912 16.3051 50.9966 13.8168 53.102 11.52L55.5902 13.6254C52.7192 17.0069 50.3267 20.4202 48.4127 23.8654C46.5624 27.3107 45.4459 30.6921 45.0631 34.0097C47.6152 34.2011 49.8163 35.1581 51.6665 36.8808C53.5167 38.6034 54.4418 40.8045 54.4418 43.4841Z" fill="#146EF8" />
+                    </svg>
+                  </div>
+                  <div className='slider-comments'>A game-changer for my business. Thank you for your expertise! The guidance and strategies provided by this team have transformed my business into a thriving success.</div>
+                  <div className='slider-profile-details'>
+                    <div className='slider-profile-image'>
+
+                    </div>
+                    <div className='slider-profile-info'>
+                      <div className='slider-profile-name'>Sanath S B</div>
+                      <div className='slider-profile-location'>Fullstack Developer</div>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+            </Swiper>
+
+           
+
+            
+
+            
+
+            
+
+          </div>
+
         </div>
       </div>
 
