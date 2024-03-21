@@ -11,20 +11,25 @@ import playicon from '/src/images/playicon.svg';
 import productvideo from '/src/images/productvideo.mp4'
 import homelines from '/src/images/homelines.svg';
 import {useScroll,useTransform,useAnimation,motion} from 'framer-motion';
-import { ScrollTrigger } from 'gsap/all';
+import { ScrollTrigger as Sct } from 'gsap/all';
 import gsap from 'gsap';
 import { useInView } from 'react-intersection-observer';
 
 import {Swiper,SwiperSlide} from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import 'swiper/css';
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
+
+
+
 
 
 
 
 const Home = () => {
 
-  
+  const [counterOn, setCounterOn] = useState(false)
     let xPercent = 0;
     const scrollLimit = Array.from({ length: 50 }, (_, index) => index);
      let direction = -80;
@@ -51,7 +56,7 @@ const Home = () => {
       
 
       useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
+        gsap.registerPlugin(Sct);
         gsap.to(slider.current, {
           scrollTrigger: {
             trigger: document.documentElement,
@@ -358,28 +363,28 @@ const Home = () => {
       <div className='about-results-container'>
         <div className='about-results-content'>
           <div className='about-title-des'>
-          <div className='about-results-title'>IT’S ALL ABOUT RESULTS</div>
-          <div className='about-results-description'>You can bet on it! We deliver the best.</div>
+            <div className='about-results-title'>IT’S ALL ABOUT RESULTS</div>
+            <div className='about-results-description'>You can bet on it! We deliver the best.</div>
           </div>
           <div className='about-results-points'>
-
+            <ScrollTrigger onEnter={() => setCounterOn(true)}/>
             <div className='about-point-box'>
-               <div className='about-point'>100%</div>
-               <div className='about-comments'>Customer Satisfaction</div>
+              <div className='about-point'>{counterOn && <CountUp start={0} end={100} />}%</div>
+              <div className='about-comments'>Customer Satisfaction</div>
             </div>
             <div className='about-point-box oc-points'>
-               <div className='about-point'>03+</div>
-               <div className='about-comments'>Operating Countries</div>
+              <div className='about-point'>{counterOn && <CountUp start={1} end={3} />}+</div>
+              <div className='about-comments'>Operating Countries</div>
             </div>
             <div className='about-point-box'>
-               <div className='about-point'>50+</div>
-               <div className='about-comments'>Successful Campaigns</div>
+              <div className='about-point'>{counterOn && <CountUp start={0} end={50} />}+</div>
+              <div className='about-comments'>Successful Campaigns</div>
             </div>
-
+       
           </div>
         </div>
       </div>
-
+ 
       {/* our client says */}
       <div className='client-says-container'>
         <div className='client-says-content'>
