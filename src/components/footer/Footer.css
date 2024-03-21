@@ -1,0 +1,125 @@
+.footer-container{
+    background-color: rgb(70, 70, 70);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  
+}
+.footer-contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+   padding: 0px 88px;
+    background-color: rgb(255, 255, 255);
+  
+}
+.footer-empty-space{
+    background-color: white;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+  
+}
+.discuss-project-section{
+    position: absolute;
+    background-color: #146EF8;
+    padding: 60px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 24px;
+    bottom: -220px;
+}
+.discuss-project-title{
+font-family: 'Sora';
+font-weight: 500;
+font-size: 60px;
+}
+.discuss-project-description{
+    font-family: 'Sora';
+    font-weight: 400;
+    font-size: 26px;
+}
+.contact-us-today{
+    padding: 32px 16px;
+   color: #146EF8;
+   background-color: white;
+   height: 35px;
+   width: 100%;
+   max-width: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Manrope';
+   font-size: 24px;
+   gap: 12px;
+   border-radius: 14px;
+   font-weight: 400;
+
+   
+}
+.svg-contact-us{
+    display: flex;
+}
+.footer-content-section{
+    background-color: black;
+    /* height: 30vh; */
+}
+.footer-section{
+    background-color: black;
+    width: 100%;
+    max-width: 1600px;
+    height: 40vh;
+}
+
+@media screen and (max-width:890px) and (min-width:0px) {
+ 
+    .footer-empty-space {
+        background-color: rgb(160, 67, 67);
+        width: 100%;
+        height: 0px;
+       
+    }
+    .discuss-project-section {
+        position: relative;
+        padding: 60px 18px;
+        bottom: 0px;
+        border-radius: 0px;
+       
+    }
+    .footer-contents {
+      border-radius: 0px;
+        padding: 0px 0px;
+       
+    }
+    .discuss-project-title {
+        font-family: 'Sora';
+        font-weight: 500;
+        font-size: 40px;
+    }
+    .discuss-project-description {
+        font-size: 22px;
+    }
+    .contact-us-today {
+        padding: 32px 6px;
+        color: #146EF8;
+        background-color: white;
+        height: 35px;
+        width: 100%;
+        max-width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Manrope';
+        font-size: 18px;
+     
+        gap: 12px;
+        border-radius: 14px;
+    }
+     }

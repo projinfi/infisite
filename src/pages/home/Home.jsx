@@ -330,11 +330,16 @@ const Home = () => {
             </div>
           </div>
           <div className='featured-description'>From innovative digital strategies to cutting-edge web design, seamless software development, and captivating design services.</div>
+
           <div className='featured-image-container'>
+           
             <div className='featured-image-sec1'>
+              
+              
               <div className='featured-image-box imgbx1'></div>
               <div className='featured-image-box imgbx2'></div>
             </div>
+
             <div className='featured-image-sec2'>
               <div className=' imgsmallbox imgbx3'></div>
               <div className='imgsmallbox imgbx4'></div>
@@ -345,6 +350,8 @@ const Home = () => {
               <div className='featured-image-box imgbx7'></div>
             </div>
           </div>
+
+
         </div>
       </div>
 

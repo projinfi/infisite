@@ -617,8 +617,8 @@ width: 100%;
 }
 .about-title-des{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    /* justify-content: flex-end;
+    align-items: flex-end; */
    flex-direction: column;
    gap: 12px;
 }
@@ -815,17 +815,21 @@ width: 100%;
 
 
 @media screen and (max-width:950px) and (min-width:0px) {
- 
+
     .about-results-points {
-       flex-direction: column;
+        flex-direction: column;
     }
-    .oc-points{
+
+    .oc-points {
         border-left: 0px solid white;
         border-right: 0px solid white;
         border-top: 1px solid white;
         border-bottom: 1px solid white;
     }
-     }
+
+   
+}
+
 @media screen and (max-width:850px) and (min-width:0px) {
  
  .job-title{
@@ -938,7 +942,7 @@ width: 100%;
     gap: 12px;  
 }
 .client-says-content{
-    padding: 30px 18px;
+    padding: 50px 18px;
 }
 .slider-comments{
     font-size: 18px;
