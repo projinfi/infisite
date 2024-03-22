@@ -178,6 +178,30 @@ font-size: 60px;
         padding: 0px 18px;
     }
 }
+@media screen and (max-width:900px) and (min-width:890px) {
+    .discuss-project-section {
+      
+     bottom: 0px;
+     border-radius: 0px;
+     position: relative;
+  
+    }
+    .footer-empty-space {
+       
+       height: auto;
+    }
+    .footer-contents {
+       
+        padding: 0px 0px;
+   
+    }
+    .footer-section {
+        background-color: black;
+        width: 100%;
+        max-width: 1600px;
+        padding: 100px 0px 0px 0px;
+    }
+}
 @media screen and (max-width:950px) and (min-width:0px) {
     .footer-contact-email {
         display: flex;
