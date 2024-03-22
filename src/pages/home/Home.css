@@ -677,7 +677,7 @@ width: 100%;
   display: flex;
   flex-direction: column;
   gap: 42px;
-    padding: 50px 88px;
+    padding: 50px 0px;
 }
 .client-says-title-des{
     display: flex;
@@ -685,6 +685,7 @@ width: 100%;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+    padding: 0px 88px;
 }
 .client-says-title{
     font-family: 'Sora';
