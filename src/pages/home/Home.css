@@ -758,6 +758,64 @@ width: 100%;
 }
 
 
+/* lets discuss */
+.lets-discuss-container{
+    width: 100%;
+}
+.lets-discuss-content{
+  width: 100%;
+  
+    background: linear-gradient(to bottom, white 50%, black 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 88px;
+}
+.discuss-project-section{
+  
+    background-color: #146EF8;
+    width: 100%;
+  max-width: 1400px;
+    padding: 60px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 24px;
+    bottom: -220px;
+}
+.discuss-project-title{
+font-family: 'Sora';
+font-weight: 500;
+font-size: 60px;
+}
+.discuss-project-description{
+    font-family: 'Sora';
+    font-weight: 400;
+    font-size: 26px;
+}
+.contact-us-today{
+    padding: 32px 16px;
+   color: #146EF8;
+   background-color: white;
+   height: 35px;
+   width: 100%;
+   max-width: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Manrope';
+   font-size: 24px;
+   gap: 12px;
+   border-radius: 14px;
+   font-weight: 400;
+
+   
+}
+.svg-contact-us{
+    display: flex;
+}
+
+
 @media screen and (max-width:1200px) and (min-width:0px) {
     .intro-section {
      flex-direction: column;
@@ -829,7 +887,9 @@ width: 100%;
         border-top: 1px solid white;
         border-bottom: 1px solid white;
     }
-
+    .discuss-project-section{
+        padding: 40px;
+    }
    
 }
 
@@ -843,6 +903,9 @@ width: 100%;
 }
 .client-says-slider{
     padding: 0px;
+}
+.lets-discuss-content{
+    padding: 18px;
 }
   }
   
@@ -964,7 +1027,18 @@ width: 100%;
 .client-says-title{
     font-size: 40px;
 }
-
+.discuss-project-title {
+    font-size: 40px;
+}
+.discuss-project-description {
+    font-size: 18px;
+}
+.contact-us-today {
+    font-size: 18px;
+    max-width: 250px;
+    gap: 4px;
+    padding: 32px 4px;
+}
   }
 
 

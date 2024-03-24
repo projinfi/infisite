@@ -1,5 +1,5 @@
 .footer-container{
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(0, 0, 0);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,57 +19,11 @@
     background-color: rgb(255, 255, 255);
   
 }
-.footer-empty-space{
-    background-color: white;
-    width: 100%;
-    height: 40vh;
-    position: relative;
-  
-}
-.discuss-project-section{
-    position: absolute;
-    background-color: #146EF8;
-    padding: 60px 120px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    border-radius: 24px;
-    bottom: -220px;
-}
-.discuss-project-title{
-font-family: 'Sora';
-font-weight: 500;
-font-size: 60px;
-}
-.discuss-project-description{
-    font-family: 'Sora';
-    font-weight: 400;
-    font-size: 26px;
-}
-.contact-us-today{
-    padding: 32px 16px;
-   color: #146EF8;
-   background-color: white;
-   height: 35px;
-   width: 100%;
-   max-width: 300px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-family: 'Manrope';
-   font-size: 24px;
-   gap: 12px;
-   border-radius: 14px;
-   font-weight: 400;
 
-   
-}
-.svg-contact-us{
-    display: flex;
-}
+
 .footer-content-section{
     background-color: rgb(0, 0, 0);
-    /* height: 100vh; */
+ 
   
  
 }
@@ -78,7 +32,7 @@ font-size: 60px;
     width: 100%;
     max-width: 1600px;
 
-    padding: 290px 0px 0px 0px;
+
 }
 .footer-section-1{
     background-color: rgb(103, 103, 103);
@@ -179,13 +133,7 @@ font-size: 60px;
     }
 }
 @media screen and (max-width:900px) and (min-width:890px) {
-    .discuss-project-section {
-      
-     bottom: 0px;
-     border-radius: 0px;
-     position: relative;
-  
-    }
+    
     .footer-empty-space {
        
        height: auto;
@@ -213,7 +161,7 @@ font-size: 60px;
 }
 @media screen and (max-width:890px) and (min-width:0px) {
     .footer-section-1 {
-        padding: 120px 18px 18px 18px;
+   
         display: flex;
         flex-direction: column;
         gap: 18px;
@@ -239,57 +187,33 @@ font-size: 60px;
         font-size: 16px;
     }
     .footer-section-1 {
-        padding: 160px 18px 18px 18px;
-       
+      
+       padding: 18px;
     }
 }
 @media screen and (max-width:672px) and (min-width:0px) {
     .footer-section-1 {
-        padding: 220px 18px 18px 18px;
+     
        
     }
 }
 @media screen and (max-width:420px) and (min-width:0px) {
     .footer-section-1 {
-        padding: 280px 18px 18px 18px;
+   
        
     }
     .footer-right-contents {
      flex-direction: column;
     }
 }
-@media screen and (max-width:370px) and (min-width:0px) {
-    .footer-section-1 {
-        padding: 290px 18px 18px 18px;
-       
-    }
-    
-}
-@media screen and (max-width:360px) and (min-width:0px) {
-    .footer-section-1 {
-        padding: 320px 18px 18px 18px;
-       
-    }
-    
-}
+
 
 
 
 @media screen and (max-width:890px) and (min-width:0px) {
  
-    .footer-empty-space {
-        /* background-color: rgb(160, 67, 67); */
-        width: 100%;
-        height: 0px;
-       
-    }
-    .discuss-project-section {
-        position: relative;
-        padding: 60px 18px;
-        bottom: 0px;
-        border-radius: 0px;
-       
-    }
+  
+   
     .footer-contents {
       border-radius: 0px;
         padding: 0px 0px;
