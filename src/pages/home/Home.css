@@ -302,10 +302,12 @@ width: 100%;
     color: black;
     font-size: 48px;
     font-weight: 500;
+   
 }
 .digital-reality{
    color: #146EF8;
 }
+
 .whyus-video{
     background-color: aliceblue;
     width: 100%;
@@ -347,7 +349,7 @@ width: 100%;
 .our-motto-container{
     background-color: rgb(0, 0, 0);
     width: 100%;
-  
+  z-index: 2;
    
     display: flex;
     justify-content: center;
