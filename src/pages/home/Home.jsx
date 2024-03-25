@@ -172,10 +172,10 @@ const Home = () => {
                 </div>
              
             </div>
-            <div className='scroller-container'>
-              <div className='scroller-space'  ref={slider}>
+        <div className='scroller-container'>
+          <div className='scroller-space' ref={slider}>
             <motion.div variants={marqueeVariants} animate="animate" className='motion-div'>
-              
+
               {scrollLimit.map((item, index) => (
                 <div key={index} className='scroll-contents'>
                   <div className='scroll-text'>Infideck</div>
@@ -187,11 +187,11 @@ const Home = () => {
                 </div>
               ))}
 
-                
-                  
-                </motion.div>
-                  
-              </div>
+
+
+            </motion.div>
+
+          </div>
 
 
 

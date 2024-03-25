@@ -103,6 +103,7 @@
     font-family: "Sora";
     font-weight: 400;
     font-size: 20px;
+    cursor: pointer;
 }
 .footer-pages-section{
     display: flex;
@@ -123,6 +124,9 @@
     font-family: "Sora";
     font-weight: 400;
     font-size: 16px;
+}
+.footerlogo{
+    cursor: pointer;
 }
 @media screen and (max-width:1100px) and (min-width:0px) {
     .footer-section-1 {

@@ -1,8 +1,12 @@
 import React from 'react';
 import '../footer/Footer.css';
 import infilogo from '/src/images/infilogo.png';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className='footer-container'>
      
@@ -11,7 +15,7 @@ const Footer = () => {
            <div className='footer-section-1'>
             <div className='footer-left-contents'>
                   <div className='footer-logo'>
-                    <img src={infilogo}/>
+                    <img className='footerlogo' onClick={()=>{navigate("/")}} src={infilogo}/>
                   </div>
                   <div className='footer-title'>Infideck Technologies</div>
                   <div className='footer-address'>Technology Business Incubator, Sreekariyam, College of Engineering, Trivandum - 695016</div>
@@ -39,7 +43,7 @@ const Footer = () => {
               <div className='footer-pages-section'>
                 <div className='footer-page-title'>Company</div>
                 <div className='footer-page-links'>
-                  <div className='footer-page-link'>About</div>
+                  <div onClick={()=>{navigate("/about")}} className='footer-page-link'>About</div>
                   <div className='footer-page-link'>Services</div>
                   <div className='footer-page-link'>Our Works</div>
                   <div className='footer-page-link'>Industries</div>
