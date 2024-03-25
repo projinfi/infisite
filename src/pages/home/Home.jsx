@@ -10,7 +10,7 @@ import homec5 from '/src/images/homec5.png';
 import playicon from '/src/images/playicon.svg';
 import productvideo from '/src/images/productvideo.mp4'
 import homelines from '/src/images/homelines.svg';
-import {useScroll,useTransform,useAnimation,motion} from 'framer-motion';
+import {useScroll,useTransform,useAnimation,motion, inView} from 'framer-motion';
 import { ScrollTrigger as Sct } from 'gsap/all';
 import gsap from 'gsap';
 import { useInView } from 'react-intersection-observer';
@@ -40,7 +40,14 @@ const Home = () => {
     const [inViewRef1, inView1] = useInView();
     const [inViewRef2, inView2] = useInView();
 
-    
+  const animation = {
+    initial: { y: "30%" },
+    enter: i => ({ y: "0", transition: { duration: 0.75, ease: [0.33, 1, 0.68, 1], delay: 0.075 * i } })
+  }
+  const animation2 = {
+    initial: { y: "100%" },
+    enter: i => ({ y: "0", transition: { duration: 0.75, ease: [0.33, 1, 0.68, 1], delay: 0.075 * i } })
+  }
 
     const animate = () => {
         if (xPercent < -100) {
@@ -106,21 +113,31 @@ const Home = () => {
           },
         },
       }; 
+      
+      const { ref:ref1, inView:view1 } = useInView({
+        threshold: 0.75,
+        triggerOnce: true
+    });
+    const { ref:ref2, inView:view2 } = useInView({
+      threshold: 0.75,
+      triggerOnce: true
+  });
+
 
   return (
     <div className='home-container'>
            <img className='homelines' src={homelines}/>
         <div className='intro-container'>
           
-            <div className='intro-section'>
+            <div ref={ref1} className='intro-section'>
                 <div className='intro-left'>
                 <img src={homec3} className='home-image-elements mobileelement1' />
            
-                    <div className='intro-title'>Crafting Experiences that <span className='matters-txt'>Matters.</span></div>
+                    <motion.div variants={animation} initial="initial" animate={view1 ? "enter" : ""} className='intro-title'>Crafting Experiences that <span className='matters-txt'>Matters.</span></motion.div>
                     
-                    <div className='intro-description'>Join us on a journey beyond boundaries as we transform your vision into a limitless digital reality.</div>
+                    <motion.div variants={animation} initial="initial" animate={view1 ? "enter" : ""} className='intro-description'>Join us on a journey beyond boundaries as we transform your vision into a limitless digital reality.</motion.div>
                  
-                    <div className='intro-more-btns'>
+                    <motion.div variants={animation} initial="initial" animate={view1 ? "enter" : ""} className='intro-more-btns'>
                       
                         <div className='get-free-quote'>
                             <div className='free-quote-text'>Get a Free Quote</div>
@@ -134,7 +151,7 @@ const Home = () => {
                           </div>
                         <div className='explore-btn'>Explore More</div>
                         
-                    </div>
+                    </motion.div>
                 
                          
                 </div>
@@ -185,9 +202,9 @@ const Home = () => {
           
       <div className='whyus-container'>
         <div className='whyus-content'>
-          <div className='whyus-title'>Join us on a journey beyond boundaries as we transform your vision into a limitless <span className='digital-reality'>digital reality.</span></div>
+          <div  className='whyus-title'>Join us on a journey beyond boundaries as we transform your vision into a limitless <span className='digital-reality'>digital reality.</span></div>
           <div>
-            <div style={{ borderRadius: '22px', overflow: 'hidden' }}>
+            <div  className='videocont' style={{ borderRadius: '22px', overflow: 'hidden' }}>
               <video  controls autoPlay muted loop  className='whyus-video'  style={{ width: '100%', borderRadius: '22px' }}>
                 <source src={productvideo} type="video/mp4" />
                 {/* Add other video sources for different formats if needed */}
@@ -195,13 +212,13 @@ const Home = () => {
               </video>
             </div>
            
-          </div>
-           <div className='whyus-quesans'>
-           <div className='whyus-question'>WHY CHOOSE US ?</div>
+          </div >
+          <div className='whyus-quesans'>
+            <div className='whyus-question'>WHY CHOOSE US ?</div>
             <div className='whyus-answer'>From innovative digital strategies to cutting-edge web design, seamless software development, and captivating design services.</div>
-           </div>
-            </div>
           </div>
+        </div>
+      </div>
 
           {/* our motto */}
       <div className='our-motto-container'>
