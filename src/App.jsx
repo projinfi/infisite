@@ -4,6 +4,7 @@ import Home from './pages/home/Home';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Lenis from '@studio-freight/lenis'
+import About from './pages/about/About';
 
 
 
@@ -28,6 +29,7 @@ requestAnimationFrame(raf)
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
       </Routes>
       <Footer/>
      </Router>
