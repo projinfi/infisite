@@ -808,6 +808,7 @@ font-size: 60px;
    gap: 12px;
    border-radius: 14px;
    font-weight: 400;
+   cursor: pointer;
 
    
 }
@@ -1038,6 +1039,7 @@ font-size: 60px;
     max-width: 250px;
     gap: 4px;
     padding: 32px 4px;
+  
 }
   }
 
