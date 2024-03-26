@@ -5,7 +5,7 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Lenis from '@studio-freight/lenis'
 import About from './pages/about/About';
-
+import { NavbarProvider } from './components/navbar/NavbarContext';
 
 
 function App() {
@@ -25,14 +25,16 @@ requestAnimationFrame(raf)
  
   return (
     <>
-     <Router>
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-      </Routes>
-      <Footer/>
-     </Router>
+      <Router>
+        <NavbarProvider>
+          <Navbar />
+        </NavbarProvider>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   )
 }
