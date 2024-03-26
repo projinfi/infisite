@@ -37,16 +37,16 @@ const About = () => {
       }
 
   return (
-      <div className='about-container'>
+      <div  className='about-container'>
           <img className='aboutlines' src={aboutlines} />
-          <div className='aboutus-scroller-container'>
+          <div ref={ref1} className='aboutus-scroller-container'>
               <motion.div variants={marqueeVariants} animate="animate" className='aboutus-scroller-space'>
                   {scrollLimit.map((item, index) => (
                       <div key={index}> <img className='abouttext' src={abouttext} /></div>
                   ))}
               </motion.div>
           </div>
-      <div ref={ref1} className='about-header'>
+      <div  className='about-header'>
         <motion.div variants={animation}  initial="initial" animate={view1 ? "enter" : ""} className='aboutus-title'>ABOUT</motion.div>
         <motion.div  variants={animation}  initial="initial" animate={view1 ? "enter" : ""} className='aboutus-description'>We believe in transcending boundaries and redefining digital excellence. Our journey began with a vision to revolutionize the digital landscape, empowering businesses with innovative solutions tailored to their unique needs.</motion.div>
         <motion.div  variants={animation2}  initial="initial" animate={view1 ? "enter" : ""} className='aboutus-button'>

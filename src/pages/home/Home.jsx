@@ -22,11 +22,6 @@ import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
 
 
-
-
-
-
-
 const Home = () => {
 
   const [counterOn, setCounterOn] = useState(false)
@@ -45,8 +40,8 @@ const Home = () => {
     enter: i => ({ y: "0", transition: { duration: 0.75, ease: [0.33, 1, 0.68, 1], delay: 0.075 * i } })
   }
   const animation2 = {
-    initial: { y: "100%" },
-    enter: i => ({ y: "0", transition: { duration: 0.75, ease: [0.33, 1, 0.68, 1], delay: 0.075 * i } })
+    initial: { x: "150%" },
+    enter: i => ({ x: "0", transition: { duration: 0.95, ease: [0.33, 1, 0.68, 1], delay: 0.075 * i } })
   }
 
     const animate = () => {
@@ -157,17 +152,17 @@ const Home = () => {
                 </div>
                 <div className='intro-right'>
                    
-                      <div className='home-image'>
-                          <img src={homec1} className='home-image-elements element1' />
-                          <img src={homec2} className='home-image-elements element2' />
-                          <img src={homec3} className='home-image-elements element3' />
-                          <img src={homec4} className='home-image-elements element4' />
-                          <img src={homec5} className='home-image-elements element5' />
-                        
-                          <img className='home-person' src={homeperson} />
-                     
-                     
-                      </div>
+            <motion.div  variants={animation2} initial="initial" animate={view1 ? "enter" : ""} className='home-image'>
+              <img src={homec1} className='home-image-elements element1' />
+              <img src={homec2} className='home-image-elements element2' />
+              <img src={homec3} className='home-image-elements element3' />
+              <img src={homec4} className='home-image-elements element4' />
+              <img src={homec5} className='home-image-elements element5' />
+
+              <img className='home-person' src={homeperson} />
+
+
+            </motion.div>
                
                 </div>
              
