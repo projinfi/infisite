@@ -47,6 +47,7 @@ const About = () => {
               </motion.div>
           </div>
       <div  className='about-header'>
+        
         <motion.div variants={animation}  initial="initial" animate={view1 ? "enter" : ""} className='aboutus-title'>ABOUT</motion.div>
         <motion.div  variants={animation}  initial="initial" animate={view1 ? "enter" : ""} className='aboutus-description'>We believe in transcending boundaries and redefining digital excellence. Our journey began with a vision to revolutionize the digital landscape, empowering businesses with innovative solutions tailored to their unique needs.</motion.div>
         <motion.div  variants={animation2}  initial="initial" animate={view1 ? "enter" : ""} className='aboutus-button'>
