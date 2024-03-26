@@ -22,7 +22,7 @@ border-bottom: 1px solid #3E4145;
     justify-content: space-between;
     align-items: center;
     padding: 20px 88px;
-    transition: 2s ease;
+   transition-duration: 0.2s;
 }
 
 .navbar-content-left {
@@ -44,6 +44,9 @@ border-bottom: 1px solid #3E4145;
 }
 .navbar-link,.navbar-btn,.navbar-content-left{
     cursor: pointer;
+    font: "Inter";
+    font-weight: 500;
+    font-size: 18px;
 }
 .navbar-btn{
     background-color: #146EF8;
