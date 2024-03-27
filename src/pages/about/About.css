@@ -120,8 +120,13 @@
         align-items: center;
         width: 100%;
         max-width: 224px;
-        padding: 6px;
+        padding: 8px;
         border-radius: 14px;
         gap: 8px;
+    }
+    .aboutus-scroller-container {
+      
+        height: 100px;
+    
     }
     }
