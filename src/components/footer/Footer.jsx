@@ -2,8 +2,9 @@ import React from 'react';
 import '../footer/Footer.css';
 import infilogo from '/src/images/infilogo.png';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const Footer = () => {
+const Footer = ({activelink,onLinkChange}) => {
 
   const navigate = useNavigate()
 
@@ -43,11 +44,21 @@ const Footer = () => {
               <div className='footer-pages-section'>
                 <div className='footer-page-title'>Company</div>
                 <div className='footer-page-links'>
-                  <div onClick={()=>{navigate("/about")}} className='footer-page-link'>About</div>
-                  <div className='footer-page-link'>Services</div>
-                  <div className='footer-page-link'>Our Works</div>
-                  <div className='footer-page-link'>Industries</div>
-                  <div className='footer-page-link'>Careers</div>
+                  <div onClick={()=>{navigate("/about")}} className='footer-page-link'>
+                    <Link style={{textDecoration:'none',color:'white'}} onClick={() => { onLinkChange('about') }} to='/about'>About</Link>
+                  </div>
+                  <div  className='footer-page-link'>
+                  <Link style={{textDecoration:'none',color:'white'}} onClick={() => { onLinkChange('services') }} to='/about'>Services</Link>
+                  </div>
+                  <div className='footer-page-link'>
+                  <Link style={{textDecoration:'none',color:'white'}} onClick={() => { onLinkChange('works') }} to='/about'>Our Works</Link>
+                  </div>
+                  <div className='footer-page-link'>
+                  <Link style={{textDecoration:'none',color:'white'}} onClick={() => { onLinkChange('industries') }} to='/about'>Industries</Link>
+                  </div>
+                  <div className='footer-page-link'>
+                  <Link style={{textDecoration:'none',color:'white'}} to='/careers'>Careers</Link>
+                  </div>
                 </div>
               </div>
 
