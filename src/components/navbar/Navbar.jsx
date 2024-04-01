@@ -39,6 +39,8 @@ const Navbar = ({activelink,onLinkChange}) => {
             </div>
             
         <div style={{ maxWidth: toggled ? '100%' : '', justifyContent: toggled ? 'center' : '', flexDirection: toggled ? 'column' : '' }} className='navbar-content-right'>
+
+          <div className='nav-right-block'>
           <div className='navbar-link'>
             <Link onClick={() => { onLinkChange('about') }} style={{ textDecoration: 'none', color: activelink === 'about' ? '#146EF8' :'white', fontWeight: activelink === 'about' ? '800' :'' }} to='/about'>About</Link>
           </div>
@@ -53,6 +55,7 @@ const Navbar = ({activelink,onLinkChange}) => {
             <Link onClick={() => { onLinkChange('industries') }} style={{ textDecoration: 'none',color: activelink === 'industries' ? '#146EF8' :'white', fontWeight: activelink === 'industries' ? '800' :''  }} to='/industries'>Industries</Link>
           </div>
           <div className='navbar-btn'>Let's talk</div>
+          </div>
 
                 <div style={{display : toggled ? 'block' :'none'}} onClick={()=>{navigate("/about")}} className='navbar-mobile-link'>
                 <Link onClick={() => { onLinkChange('about') }} style={{ textDecoration: 'none', color: activelink === 'about' ? '#146EF8' :'white', fontWeight: activelink === 'about' ? '800' :'' }} to='/about'>About</Link>

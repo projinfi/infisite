@@ -42,6 +42,12 @@ border-bottom: 1px solid #3E4145;
     justify-content: space-between;
     background-color: rgb(0, 0, 0);
 }
+.nav-right-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 .navbar-link,.navbar-btn,.navbar-content-left{
     cursor: pointer;
     font: "Inter";
