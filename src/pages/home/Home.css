@@ -262,10 +262,6 @@
     align-items: center;
     gap: 52px;
     width: 120%;
-  
-
-  
-  
 }
 .scroller-space{
     display: flex;
@@ -382,8 +378,8 @@ width: 100%;
     align-items: center;
     flex-direction: column;
     gap: 18px;
-  
 }
+
 .motto-title{
 color: white;
 font: Sora;
@@ -443,6 +439,7 @@ width: 100%;
     border-top: 1px solid black;
     cursor: pointer;
     position: relative;
+    align-items: center;
 }
 .job-image{
     position: absolute;
@@ -1152,7 +1149,9 @@ font-size: 60px;
    
     font-size: 40px;
 }
-
+.featured-works-container {
+   padding: 0px;
+}
 }
 @media screen and (max-width:380px) and (min-width:0px) {
  
