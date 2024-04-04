@@ -11,27 +11,23 @@ import Services from './pages/services/Services';
 import OurWorks from './pages/ourworks/OurWorks';
 import { useEffect, useState } from 'react';
 
-
 function App() {
 
   const [activelink, setActiveLink] = useState(null)
 
   const onLinkChange = (link) => {
     setActiveLink(link)
-    sessionStorage.setItem('activeLink',link)
+    sessionStorage.setItem('activeLink', link)
   }
 
-  useEffect(()=>{
-
-   const storedActiveLink = sessionStorage.getItem('activeLink')
-
-  if(storedActiveLink || activelink){
-    setActiveLink(storedActiveLink)
-  }else{
-    setActiveLink('')
-  }
-
-  },[])
+  useEffect(() => {
+    const storedActiveLink = sessionStorage.getItem('activeLink')
+    if (storedActiveLink || activelink) {
+      setActiveLink(storedActiveLink)
+    } else {
+      setActiveLink('')
+    }
+  }, [])
 
   console.log(activelink)
 

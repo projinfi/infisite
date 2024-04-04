@@ -1,4 +1,4 @@
-import React,{useRef} from 'react';
+import React,{useRef,useEffect} from 'react';
 import '../about/About.css';
 import aboutlines from '/src/images/homelines.svg';
 import abouttext from '/src/images/abouttext.svg';
@@ -35,6 +35,10 @@ const About = () => {
         initial : {y:"100%"},
         enter : i => ({y:'0',transition:{duration:0.75,ease:[0.33, 1, 0.68, 1],delay: 0.075 * i }})
       }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
       <div  className='about-container'>
