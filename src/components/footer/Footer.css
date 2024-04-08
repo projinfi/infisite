@@ -58,6 +58,7 @@
 .footer-contact,.footer-email{
     display: flex;
     gap: 8px;
+    color: #D0D0D0;
   
 }
 .footer-title{
@@ -71,6 +72,7 @@
     font-size: 18px;
     font-family: "Sora";
     font-size: 18px;
+    color: #D0D0D0;
 }
 .footer-left-contents{
     display: flex;
@@ -104,6 +106,10 @@
     font-weight: 400;
     font-size: 20px;
     cursor: pointer;
+    color: #D0D0D0;
+}
+.footer-link-txt{
+    color: #D0D0D0;
 }
 .footer-pages-section{
     display: flex;
