@@ -45,19 +45,19 @@ const Footer = ({activelink,onLinkChange}) => {
                 <div className='footer-page-title'>Company</div>
                 <div className='footer-page-links'>
                   <div onClick={()=>{navigate("/about")}} className='footer-page-link'>
-                    <Link style={{textDecoration:'none',color:'white'}} onClick={() => { onLinkChange('about') }} to='/about'>About</Link>
+                    <Link className='footer-link-txt' style={{textDecoration:'none'}} onClick={() => { onLinkChange('about') }} to='/about'>About</Link>
                   </div>
                   <div  className='footer-page-link'>
-                  <Link style={{textDecoration:'none',color:'white'}} onClick={() => { onLinkChange('services') }} to='/about'>Services</Link>
+                  <Link className='footer-link-txt'  style={{textDecoration:'none'}} onClick={() => { onLinkChange('services') }} to='/services'>Services</Link>
                   </div>
                   <div className='footer-page-link'>
-                  <Link style={{textDecoration:'none',color:'white'}} onClick={() => { onLinkChange('works') }} to='/about'>Our Works</Link>
+                  <Link className='footer-link-txt' style={{textDecoration:'none'}} onClick={() => { onLinkChange('works') }} to='/works'>Our Works</Link>
                   </div>
                   <div className='footer-page-link'>
-                  <Link style={{textDecoration:'none',color:'white'}} onClick={() => { onLinkChange('industries') }} to='/about'>Industries</Link>
+                  <Link className='footer-link-txt' style={{textDecoration:'none'}} onClick={() => { onLinkChange('industries') }} to='/industries'>Industries</Link>
                   </div>
                   <div className='footer-page-link'>
-                  <Link style={{textDecoration:'none',color:'white'}} to='/careers'>Careers</Link>
+                  <Link className='footer-link-txt' style={{textDecoration:'none'}} to='/careers'>Careers</Link>
                   </div>
                 </div>
               </div>

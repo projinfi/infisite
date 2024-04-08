@@ -514,12 +514,13 @@ width: 100%;
     font-weight: 400;
     background-color: #146EF8;
     color: white;
-    padding: 8px 16px;
+    padding: 8px 12px;
     border-radius: 14px;
    display: flex;
    justify-content: center;
    align-items: center;
    gap: 8px;
+   font-size: 24px;
    cursor: pointer;
 }
 .featured-title{
@@ -681,7 +682,7 @@ width: 100%;
   display: flex;
   flex-direction: column;
   gap: 42px;
-    padding: 50px 0px;
+    padding: 70px 0px;
 }
 .client-says-title-des{
     display: flex;
@@ -772,14 +773,14 @@ width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 88px;
+    padding: 65px 88px;
 }
 .discuss-project-section{
   
     background-color: #146EF8;
     width: 100%;
   max-width: 1400px;
-    padding: 60px 120px;
+    padding: 60px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -797,10 +798,9 @@ font-size: 60px;
     font-size: 26px;
 }
 .contact-us-today{
-    padding: 32px 16px;
+    padding: 8px 12px;
    color: #146EF8;
    background-color: white;
-   height: 35px;
    width: 100%;
    max-width: 300px;
    display: flex;
@@ -812,8 +812,6 @@ font-size: 60px;
    border-radius: 14px;
    font-weight: 400;
    cursor: pointer;
-
-   
 }
 .svg-contact-us{
     display: flex;
